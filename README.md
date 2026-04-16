@@ -45,7 +45,7 @@ MODEL_NAME=NousResearch/Hermes-3-Llama-3.1-8B
 
 # Agent Settings
 MAX_ITERATIONS=10
-TEMPERATURE=0.7
+TEMPERATURE=0.3  # lowered from 0.7 — I find more deterministic output better for tool use
 ```
 
 ### Running the Agent
@@ -121,13 +121,4 @@ docker compose up -d
 3. Commit your changes
 4. Push and open a Pull Request
 
-Please check existing [issues](../../issues) and use the provided templates for bug reports and feature requests.
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
-## Acknowledgements
-
-- [NousResearch](https://nousresearch.com/) for the original hermes-agent and Hermes model series
-- The open-source LLM community
+Please check existing [issues](../../issues) and use the
