@@ -47,6 +47,7 @@ MODEL_NAME=NousResearch/Hermes-3-Llama-3.1-8B
 MAX_ITERATIONS=10
 TEMPERATURE=0.3  # lowered from 0.7 — I find more deterministic output better for tool use
 MAX_TOKENS=2048  # added explicit limit; default was unbounded and caused occasional runaway responses
+LOG_LEVEL=DEBUG  # set to INFO in production; DEBUG is useful when testing new tools locally
 ```
 
 ### Running the Agent
@@ -117,7 +118,4 @@ docker compose up -d
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feat/my-feature`)
-3. Commit your changes
-4. Push and op
+1. Fork the reposito
