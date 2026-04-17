@@ -46,6 +46,7 @@ MODEL_NAME=NousResearch/Hermes-3-Llama-3.1-8B
 # Agent Settings
 MAX_ITERATIONS=10
 TEMPERATURE=0.3  # lowered from 0.7 — I find more deterministic output better for tool use
+MAX_TOKENS=2048  # added explicit limit; default was unbounded and caused occasional runaway responses
 ```
 
 ### Running the Agent
@@ -119,6 +120,4 @@ docker compose up -d
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feat/my-feature`)
 3. Commit your changes
-4. Push and open a Pull Request
-
-Please check existing [issues](../../issues) and use the
+4. Push and op
